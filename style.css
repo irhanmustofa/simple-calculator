@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dab488;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 25px 25px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: black;
+  pointer-events: none;
+  background-color: #bcc08a3f;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.buttons button:active {
+  transform: scale(0.9);
+}
+
+.buttons .operator {
+  color: #e01919;
+  font-weight: 500;
+}
